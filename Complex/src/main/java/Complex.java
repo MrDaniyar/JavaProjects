@@ -31,7 +31,9 @@ public class Complex implements ComplexActions, ComplexMath, TrigonometricForm {
      */
     @Override
     public String toString() {
-        return "";
+        String result = "a";
+        result += getB() < 0 ? "-i" : "+i";
+        return result + "b";
     }
 
     /**
